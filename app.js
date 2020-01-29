@@ -12,6 +12,8 @@ function getJokes(e) {
       const response = JSON.parse(this.responseText);
 
       let output = "";
+      console.log(xhr);
+      
 
       if (response.type === "success") {
         response.value.forEach(function(joke) {
